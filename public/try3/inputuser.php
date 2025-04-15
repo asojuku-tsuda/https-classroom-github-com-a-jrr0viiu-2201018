@@ -26,7 +26,7 @@ if(mb_ereg('^[ぁ-んァ-ヶ一-龠々]{1,50}$', $_GET['useraddress'])==false)
 
   if(mb_ereg('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}{1,100}$', $_GET['usermail'])==false)
   {
-    die("100文字以内で入力してください");
+    die("100文字以内の正しい形式で入力してください");
   }else{
     echo "メールアドレス：" . $_GET['usermail'];
   }
