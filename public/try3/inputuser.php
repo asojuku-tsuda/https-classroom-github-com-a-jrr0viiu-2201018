@@ -17,7 +17,7 @@ if(mb_ereg('^[ぁ-んァ-ヶ一-龠々]{1,20}$', $_GET['username'])==false)
     echo "名前：" . $_GET['username'] . "<br>";
   }
 
-if(mb_ereg('^[ぁ-んァ-ヶ一-龠々]{1,50}$', $_GET['username'])==false)
+if(mb_ereg('^[ぁ-んァ-ヶ一-龠々]{1,50}$', $_GET['useraddress'])==false)
   {
     die("50文字以内の日本語で入力してください");
   }else{
