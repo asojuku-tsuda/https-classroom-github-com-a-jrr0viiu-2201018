@@ -10,8 +10,12 @@
       <h2>
 <?php
 
-
-echo "入力された数字は： " . $_GET['indata'];
+if(mb_ereg('^[0-9]+$', $indata)==false)
+{
+  die(”数値を入力してください”);
+}else{
+  echo "入力された数字は： " . $indata;
+}
 ?>
     </h2>
     </div>
