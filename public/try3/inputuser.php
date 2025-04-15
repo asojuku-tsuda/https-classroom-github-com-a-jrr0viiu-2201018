@@ -24,7 +24,7 @@ if(mb_ereg('^[ぁ-んァ-ヶ一-龠々]{1,50}$', $_GET['useraddress'])==false)
     echo "住所：" . $_GET['useraddress']. "<br>";
   }
 
-  if(mb_ereg('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}{1,100}$', $_GET['usermail'])==false)
+  if(mb_ereg('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,100}$', $_GET['usermail'])==false)
   {
     die("100文字以内の正しい形式で入力してください");
   }else{
