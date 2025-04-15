@@ -18,7 +18,7 @@
 // }else{
 //   echo "入力された数字は： " . $indata;
 // }
-if(isset($_GET,,'^[0-9]+$')==false)
+if(isset($_GET[0-9])==false)
 {
   die("数値を入力してください");
 }
