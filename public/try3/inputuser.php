@@ -9,11 +9,11 @@
     <div class="login-box">
       <h2>
 <?php
-echo "あなたが入力した値<br>";
 if(mb_ereg('^[ぁ-んァ-ヶ一-龠々]{20}$', $_GET['username'])==false)
   {
     die("20文字以内の日本語で入力してください");
   }else{
+    echo "あなたが入力した値<br>";
     echo "名前：" . $_GET['username'] . "<br>";
   }
 
