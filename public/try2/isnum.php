@@ -10,18 +10,12 @@
       <h2>
 <?php
 
-// $indata = filter_input(INPUT_GET,'^[0-9]+$');
-$indata = '';
 if(mb_ereg('^[0-9]+$', $_GET['indata'])==false)
 {
   die("数値を入力してください");
 }else{
   echo "入力された数字は： " . $_GET['indata'];
 }
-// if(isset($_GET[0-9])==false)
-// {
-//   die("数値を入力してください");
-// }
 
 ?>
     </h2>
