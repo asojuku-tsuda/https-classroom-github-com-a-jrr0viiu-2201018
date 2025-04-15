@@ -10,11 +10,11 @@
       <h2>
 <?php
 
-$indata = '';
+$indata = filter_input(INPUT_GET,'^[0-9]+$');
 
 if(mb_ereg('^[0-9]+$', $indata)==false)
 {
-  echo (”数値を入力してください”);
+  die(”数値を入力してください”);
 }else{
   echo "入力された数字は： " . $indata;
 }
